@@ -15,7 +15,7 @@
     "applet-apis": "^0.0.26",
     "applet-design": "^0.0.33",
     "applet-design-utility": "^0.0.6",
-    "applet-shell": "^0.0.30",
+    "applet-shell": "^0.0.32",
     "applet-store": "^0.0.17",
     "applet-types": "^0.0.7",
     "axios": "^1.5.0",

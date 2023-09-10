@@ -1,4 +1,4 @@
-import { createAttachment, updateAttachment, updateProfile } from 'applet-apis'
+import { createAttachment, queryChannels, updateAttachment, updateProfile } from 'applet-apis'
 import { Button, FieldError, Form, InputField, Label, TextAreaField } from 'applet-design'
 import { useEffect, useState } from 'react'
 import { useApplet } from 'applet-shell'
@@ -42,11 +42,17 @@ const ProfileSettingsPage = () => {
   const profile = applet?.profile
 
   useEffect(() => {
+    const checkAuth = async () => {
+      await queryChannels(1)
+    }
+    checkAuth()
+  }, [])
+
+  useEffect(() => {
     applet?.setHeaderTitle('Profile Settings')
   }, [])
 
   useEffect(() => {
-    console.log(profile)
     if (profile) {
       formMethods.setValue('userName', profile.name)
     }
