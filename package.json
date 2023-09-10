@@ -12,12 +12,13 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "applet-apis": "^0.0.22",
+    "applet-apis": "^0.0.26",
     "applet-design": "^0.0.33",
     "applet-design-utility": "^0.0.6",
     "applet-shell": "^0.0.30",
     "applet-store": "^0.0.17",
     "applet-types": "^0.0.7",
+    "axios": "^1.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.8",
