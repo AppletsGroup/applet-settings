@@ -11,7 +11,7 @@ const router = createBrowserRouter(
     <Route >
       <Route element={<SubPageLayout />}>
         <Route
-          path="/settings/profile"
+          path="/profile"
           element={<ProfileSettingsPage />} />
       </Route>
     </Route>
